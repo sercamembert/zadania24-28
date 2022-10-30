@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<textarea name="nazwa" cols="200" rows="70" disabled>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<br> <br>
+Podaj d=
+<input size="6" id="d" type="text">
+Podaj x=
+<input size="6" id="x">
+<br> <br>
+<button id="saveBtn" class="saveBtn">Oblicz</button>
+<br> <br>
+<span id="Drabina">Drabina= </span>
+<input size="6" id="drab">
+<span id="Alfa">Alfa= </span>
+<input size="6" id="alf">
+<script>
+    let button = document.getElementById('saveBtn');
+    button.addEventListener("click",() =>{
+        const d_mas = parseInt(document.getElementById('d').value);
+        const x_mas = parseInt(document.getElementById('x').value);
+        const drabina = document.getElementById('drab');
+        const alfa = document.getElementById('alf');
+        function dlugosc(d,x){
+            let pitagoras = Math.hypot(d,x);
+            return pitagoras;
+            
+        }
+        function kat(d, x) {
+         let radian = Math.atan(d / x);
+         let stopnie = 180 * radian / Math.PI;
+         return stopnie;
+        }
+
+        const dlug = dlugosc(d_mas,x_mas);
+        const kat1 = kat(d_mas, x_mas);
+        drabina.value = dlug.toFixed(2);
+        alfa.value = kat1.toFixed(2);
+ 
+    
+    })
+    
+    </script>
+</body>
+</html>
+
+</textarea>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function WinOpen_Maszota() {
+            window.open("menu.html", "okienkoGlowne", "toolbar=no,directories=no,menubar=no,height=400,width=1000,top=700,left=20");
+        }
+
+        function okno_zamknij_Maszota() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" name="przycisk" value=" Naciśnij mnie! " onclick="WinOpen_Maszota(' ')"><br>
+        <input type="button" value="Powrót" onClick="location.href='index.html';" />
+
+
+    </form>
+</body>
+
+</html>

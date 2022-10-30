@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var c_maszota=prompt("bok c=","");
+var b_maszota=prompt("bok b=","");
+var c=parseFloat(c_maszota);
+var b=parseFloat(b_maszota);
+var pitagoras_maszota =  Math.pow(c_maszota,2) - Math.pow(b,2);
+var a_maszota = Math.sqrt(pitagoras_maszota)
+var sinAlfa = a_maszota / c_maszota;
+document.write("sin(alfa) = "+ sinAlfa.toFixed(2)+"<br>");
+var cosAlfa = b_maszota / c_maszota;
+document.write("cos(alfa) = "+ cosAlfa.toFixed(2)+"<br>");
+var tgAlfa = a_maszota / b_maszota;
+document.write("tg(alfa) = "+ tgAlfa.toFixed(2)+"<br>");
+var ctgAlfa = b_maszota / a_maszota;
+document.write("ctg(alfa) = "+ ctgAlfa.toFixed(2));
+
+</script>
+</div>
+</body>
+</html>

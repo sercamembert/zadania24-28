@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="color:blue;font-size:70px;">
+<script language="JavaScript">
+var No=parseFloat(prompt("No=",""));
+var t=parseFloat(prompt("t=",""));
+var T1_2=parseFloat(prompt("T1/2=",""));
+let e = Math.E;
+let lambda = Math.log(2)/T1_2;
+let potega = -lambda * t;
+let N = No * Math.pow(e,potega);
+document.write("N0 = "+No+"[sztuk] <br>");
+document.write("t = "+t+"[lat] <br>");
+document.write("T1/2 = "+T1_2+"[lat] <br>");
+document.write("Lambda = "+lambda.toFixed(7)+"[1/rok] <br>");
+document.write("N = "+N.toFixed(7)+"[sztuk] <br>");
+//Autor - Filip Maszota 2P
+
+</script>
+</div>
+</body>
+</html>

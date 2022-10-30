@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 3vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        function pudelko(wysokosc_maszota,dlugosc_maszota,glebokosc_maszota){
+            this.wysokosc = wysokosc_maszota;
+            this.dlugosc = dlugosc_maszota;
+            this.glebokosc = glebokosc_maszota;
+        }
+        pudelko.szerokosc = "20";
+        pudelko.pokaz_maszota = function(){alert("szerokość: "+this.szerokosc)}
+        pudelko.prototype.wypisz = function(nr){
+            alert("pudelko "+nr + ': '+"wysokośc: "+ this.wysokosc + ' długość: ' +this.dlugosc + ' głębokość: ' +this.glebokosc);
+        }
+        pudelko.pokaz_maszota();
+        var pudelko1 = new pudelko("100", "200","300",);
+        var pudelko2 = new pudelko("10", "20","30");
+        var pudelko3 = new pudelko("1", "2","3");
+        pudelko1.wypisz(1);
+        pudelko2.wypisz(2);
+        pudelko3.wypisz(3);
+        document.write("dostęp do właściwości"+"<br>");
+        document.write(`pierwsze pudelko: <br> wysokosc: ${pudelko1.wysokosc}<br> dlugość: ${pudelko1.dlugosc}<br>głębokość: ${pudelko1.glebokosc}<br><br>`);
+        document.write(`drugie pudelko: <br> wysokosc: ${pudelko2.wysokosc}<br> dlugość: ${pudelko2.dlugosc}<br>głębokość: ${pudelko2.glebokosc}<br><br>`);
+        document.write(`trzecie pudelko: <br> wysokosc: ${pudelko3.wysokosc}<br> dlugość: ${pudelko3.dlugosc}<br>głębokość: ${pudelko3.glebokosc}<br><br>`);
+
+    </script>
+</body>
+</html>

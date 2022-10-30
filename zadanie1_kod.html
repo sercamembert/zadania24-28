@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function okno_zamknij_Maszota() {
+            window.close()
+        }
+    </script>
+</head>
+
+<textarea name="nazwa" cols="200" rows="70" disabled>
+    <html>
+
+<head>
+    <title>Przykład nr tutaj wpisz odpowiedni nume </title>
+    <script language="JavaScript">
+        function WinOpen_Maszota() {
+            window.open("obraz.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_Maszota(' ')">
+    </form>
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_Maszota() {
+            window.close()
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Uwagi na temat JS</h1>
+    <h4>Kiedy Powstała?</h4><br> Język Java Script powstał 1995<br>
+    <h4>Dlaczego jest to język skryptowy?</h4><br> JavaScript jest przede wszystkim językiem skryptowym – to znaczy interpretowanym. Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. Wystarczy nam do tego przeglądarka
+    internetowa, która ten język obsługuje<br>
+    <h4>Gdzie jest wykonywany JS?</h4><br> JavaScript jest specyficznym językiem – wykonywać go można po stronie serwera (server-side) oraz po stronie przeglądarki (client-side).<br>
+    <h4>Dlaczego jest to bezpieczne narzędzie?</h4><br> Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane
+    są w trakcie wykonywania programu.<br>
+    <h4>Czy jest to język obiektowy , jeśli tak to dlaczego.</h4><br> JavaScript jest zorientowany obiektowo, ale nie jest językiem obiektowym opartym na klasach, takim jak Java, C++, C# itp. Języki OOP oparte na klasach są podzbiorem większej rodziny języków
+    OOP, która obejmuje również języki oparte na prototypach, takie jak JavaScript<br>
+    <textarea name="nazwa" cols="150" rows="1" disabled><input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">   - Przycisk otwiera nowe okno, na którym pokazuje sie jakaś treśc<textarea><br><br>
+<textarea name="nazwa" cols="150" rows="3" disabled>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); - funkcja, która służy do otwierania nowej karty lub okna o określonym adresie URL i nazwie. Obsługuje różne parametry, których można użyć do określenia typu i lokalizacji adresu URL okna, które ma zostać otwarte.<textarea><br>
+<p>
+    toolbar=no -> ukrywa standardowy pasek narzędzi <br> directories=no -> ukrywa przyciski katalogów <br> menubar=no -> ukrywa menu przeglądarki<br> height=280 -> wartość w pixelach : ustawia wysokość okna<br> width=160 -> wartość w pixelach : ustawia
+    szerokość okna<br> top=200 -> wartość w pixelach : ustawia położenie okna względem góry ekranu<br> left=200 -> wartość w pixelach : ustawia położenie okna względem lewej strony ekranu<br> window.close() -> funkcja zamyka bieżące okno lub okno, w którym
+    została wywołana. Tę funkcję można wywołać tylko w oknach, które zostały otwarte przez skrypt przy użyciu okna.
+
+
+</p>
+<img src="obraz1.gif" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Maszota()" />
+</body>
+</textarea>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Maszota()" />
+</body>
+
+</html>

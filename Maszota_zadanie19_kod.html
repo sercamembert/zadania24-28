@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<textarea name="nazwa" cols="200" rows="70" disabled>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    Obliczanie pola i obwodu prostokąta
+    <br> <br>
+    Podaj bok a=
+    <input size="6" id="bokA" type="text">
+    Podaj bok b=
+    <input size="6" id="bokB">
+    <br> <br>
+    <button id="saveBtn" class="saveBtn">Oblicz</button>
+    <br> <br>
+    <span id="pID">P= </span>
+    <input size="6" id="pole">
+    <span id="obwID">Obw= </span>
+    <input size="6" id="obw">
+    <table>
+    <tr id="pokaz1"></tr>
+    <tr id="pokaz2"></tr>
+    </table>
+    <script>
+        let button = document.getElementById('saveBtn');
+        button.addEventListener("click",() =>{
+            const a_mas = parseInt(document.getElementById('bokA').value);
+            const b_mas = parseInt(document.getElementById('bokB').value);
+            const pInput2 = document.getElementById('pole');
+            const obwInput2 = document.getElementById('obw');
+            const resultP = document.getElementById('pokaz1');
+            const resultObw = document.getElementById('pokaz2');
+            const pole_mas = a_mas * b_mas;
+            const obw_mas = (2* a_mas) + (2*b_mas);
+            alert(`P=${pole_mas} cm^2`);
+            alert(`OBW=${obw_mas} cm`);
+            resultP.innerHTML = `P=${pole_mas} cm^2`;
+            resultObw.innerHTML = `OBW=${obw_mas} cm`;
+            pInput2.value = pole_mas;
+            obwInput2.value = obw_mas;
+     
+        
+        })
+        
+        </script>
+    </body>
+    </html>
+
+</textarea>
+</body>
+
+</html>

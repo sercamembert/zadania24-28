@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var b_mas=parseFloat(prompt("bok b=",""));
+var c_mas=parseFloat(prompt("bok c=",""));
+
+
+var pitagoras_mas =  Math.pow(c_mas,2) - Math.pow(b_mas,2);
+var a_mas = Math.sqrt(pitagoras_mas)
+var p_mas = (a_mas*b_mas)/2;
+var sinAlfa = a_mas / c_mas;
+var cosAlfa = b_mas / c_mas;
+var tgAlfa = a_mas / b_mas;
+var ctgAlfa = b_mas / a_mas;
+var h1_mas = a_mas;
+var h2_mas = b_mas;
+var h3_mas = (a_mas * b_mas)/c_mas;
+var alfa_mas = (Math.sin(a_mas/c_mas)*180)/Math.PI;
+var beta_mas = 90 - alfa_mas;
+
+
+document.write("bok a = "+a_mas.toFixed(3)+" cm <br>")
+document.write("P = "+p_mas.toFixed(3)+" cm^2<br>")
+document.write("h1 = "+h1_mas.toFixed(3)+" cm<br>")
+document.write("h2 = "+h2_mas.toFixed(3)+" cm <br>")
+document.write("h3 = "+h3_mas.toFixed(3)+" cm <br>")
+document.write("sin(alfa) = "+ sinAlfa.toFixed(3)+"<br>");
+document.write("cos(alfa) = "+ cosAlfa.toFixed(3)+"<br>");
+document.write("tg(alfa) = "+ tgAlfa.toFixed(3)+"<br>");
+document.write("ctg(alfa) = "+ ctgAlfa.toFixed(3)+"<br>");
+document.write("kąt alfa = "+ alfa_mas.toFixed(3)+" &deg<br>");
+document.write("kąt beta = "+ beta_mas.toFixed(3)+" &deg<br>");
+
+</script>
+</div>
+</body>
+</html>

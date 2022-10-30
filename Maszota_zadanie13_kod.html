@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<textarea name="nazwa" cols="200" rows="70" disabled>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <div style="color:black;font-size:45px;">
+        <script language="JavaScript">
+            var A_maszota = prompt("Podaj pierwsza liczbe  A= ", );
+            var B_maszota = prompt("Podaj pierwsza liczbe  B= ", );
+            parseFloat(A_maszota);
+            parseFloat(B_maszota);
+    
+            function potega(liczba, do_potegi) {
+                if (do_potegi == 0) {
+                    return 1;
+                    2
+                }
+                var temp = liczba;
+                for (i = 0; i < do_potegi - 1; i++) {
+                    liczba = liczba * temp;
+                }
+                return liczba;
+            }
+    
+    
+            var X = potega(A_maszota, 3);
+            var Y = 3 * (potega(A_maszota, 2) * 2);
+            var L = 3 * (A_maszota) * potega(B_maszota, 2)
+            var O = potega(B_maszota, 3)
+    
+            document.write(`Wczytane liczby:  A=${A_maszota}   B=${B_maszota}`);
+            document.write(`<br>`);
+            document.write(`(${A_maszota}+${B_maszota})^3= ${A_maszota}^3 + 3*((${A_maszota})^2)*(2) + 3*(${A_maszota})*((${B_maszota})^${2}) + ${B_maszota}^3 = ${X} + ${Y} + ${L} + ${O} = ${X+Y+L+O}`);
+        </script>
+    </div>
+    
+    <body>
+    
+    </body>
+    
+    </html>
+</textarea>
+
+</body>
+
+</html>

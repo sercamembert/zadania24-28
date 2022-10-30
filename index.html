@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+#przyciski{
+position: absolute;
+width: 100%;
+min-height: 75.5%;
+top: 22%;
+left:0%;
+display: grid;
+grid-template-columns: repeat(6, minmax(0, 12vw));
+grid-auto-rows: minmax(5vw, auto);
+gap: 1vw;
+ justify-content: center;
+        }
+    .item{
+        font-size: 0.8vw;
+    color: white;
+    font-family: 'Noto Sans Mono', monospace;
+    background: linear-gradient(-45deg, #6c3, rgb(81, 169, 70), #2288b0, #09f);
+    animation: gradient 7s ease infinite;
+    background-size: 400% 400%;
+	  filter: brightness(100%);
+	  transition: all 0.3s ease-in-out;
+    padding-top: 10%;
+    box-shadow: 0 0 15px 1px black;
+    text-align: center;
+    }
+    .item:hover{
+        filter: brightness(60%);
+    cursor: pointer;
+    }
+    @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+.nazwaa {
+    opacity: 1;
+    font-family: 'Rubik Bubbles', cursive;
+    color: greenyellow;
+    text-align: right;
+    font-size: 5rem;
+    padding-right: 4vw;
+}
+#przyciski2{
+  position: absolute;
+width: 100%;
+min-height: 10%;
+top: 130%;
+left:0%;
+display: grid;
+grid-template-columns: repeat(5, minmax(0, 12vw));
+grid-auto-rows: minmax(1vw, auto);
+gap: 1vw;
+ justify-content: center;
+}
+#przyciski3{
+  position: absolute;
+width: 100%;
+min-height: 10%;
+top: 165%;
+left:0%;
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 12vw));
+grid-auto-rows: minmax(1vw, auto);
+gap: 1vw;
+ justify-content: center;
+}
+#line{
+  border: 5px solid red;
+  position: absolute;
+  top:110%;
+  width: 80%;
+  left:10%;
+}
+.napis2{
+  width: 85%;
+  height: 30%;
+  position: absolute;
+  top:105%;
+}
+.napis3{
+  width: 60%;
+  height: 30%;
+  position: absolute;
+  top:140%;
+}
+
+    </style>
+    <script language="JavaScript">
+        function WinOpen_Maszota() {
+            window.open("zadanie1.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+
+        function WinOpen_Maszota_area() {
+            window.open("zadanie1_kod.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+
+        function WinOpen2_Maszota() {
+            window.open("zadanie2.html", "okienkojakies", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+    <h1 class="nazwaa">Filip&nbsp;MASZOTA</h1>
+    <div id="przyciski">
+        <input type="button" class="item" name="przycisk" value="zadanie 1 działanie" onclick="WinOpen_Maszota(' ')">
+        <input type="button" class="item" name="przycisk" value="zadanie 1 kod" onclick="WinOpen_Maszota_area(' ')">
+        <input type="button" class="item" value="zadanie 2 działanie" onClick="location.href='zadanie2.html';" />
+        <input type="button" class="item" value="zadanie 2 Kod" onClick="location.href='Maszota_zadanie2_kod.html';" />
+        <input type="button" class="item" value="zadanie 3 działanie" onClick="location.href='Maszota_zadanie3.html';" />
+        <input type="button"class="item" value="zadanie 4 działanie" onClick="location.href='Maszota_zadanie4.html';" />
+        <input type="button"class="item" value="zadanie 5 działanie" onClick="location.href='Maszota_zadanie5.html';" />
+        <input type="button"class="item" value="zadanie 6 działanie" onClick="location.href='Maszota_zadanie6.html';" />
+        <input type="button"class="item" value="zadanie 7 działanie" onClick="location.href='Maszota_zadanie7.html';" />
+        <input type="button"class="item" value="zadanie 8 działanie" onClick="location.href='Maszota_zadanie8.html';" />
+        <input type="button"class="item" value="zadanie 8 Kod" onClick="location.href='Maszota_zadanie8_kod.html';" />
+        <input type="button"class="item" value="zadanie 9 działanie" onClick="location.href='Maszota_zadanie9.html';" />
+        <input type="button"class="item" value="zadanie 9 Kod" onClick="location.href='Maszota_zadanie9_kod.html';" />
+        <input type="button"class="item" value="zadanie 10 działanie" onClick="location.href='Maszota_zadanie10.html';" />
+        <input type="button"class="item" value="zadanie 10 Kod" onClick="location.href='Maszota_zadanie10_kod.html';" />
+        <input type="button"class="item" value="zadanie 11 działanie" onClick="location.href='Maszota_zadanie11.html';" />
+        <input type="button"class="item" value="zadanie 11 Kod" onClick="location.href='Maszota_zadanie11_kod.html';" />
+        <input type="button"class="item" value="zadanie 12 działanie" onClick="location.href='Maszota_zadanie12.html';" />
+        <input type="button"class="item" value="zadanie 12 Kod" onClick="location.href='Maszota_zadanie12_kod.html';" />
+        <input type="button"class="item" value="zadanie 13 działanie" onClick="location.href='Maszota_zadanie13.html';" />
+        <input type="button"class="item" value="zadanie 13 Kod" onClick="location.href='Maszota_zadanie13_kod.html';" />
+        <input type="button"class="item" value="zadanie 14 działanie"onClick="location.href='Maszota_zadanie14.html';" />
+        <input type="button"class="item" value="zadanie 14 kod"onClick="location.href='Maszota_zadanie14_kod.html';" />
+        <input type="button"class="item" value="zadanie 14a działanie" onClick="location.href='Maszota_zadanie14a.html';" />
+        <input type="button"class="item" value="zadanie 14a kod" onClick="location.href='Maszota_zadanie14a_kod.html';" />
+        <input type="button"class="item" value="zadanie 16 działanie" onClick="location.href='Maszota_zadanie16.html';" />
+        <input type="button"class="item" value="zadanie 17 działanie" onClick="location.href='Maszota_zadanie17.html';" />
+        <input type="button"class="item" value="zadanie 17 Kod" onClick="location.href='Maszota_zadanie17_kod.html';" />
+        <input type="button"class="item" value="zadanie 18 działanie" onClick="location.href='Maszota_zadanie18.html';" />
+        <input type="button"class="item" value="zadanie 19 działanie" onClick="location.href='Maszota_zadanie19.html';" />
+        <input type="button"class="item" value="zadanie 19 kod" onClick="location.href='Maszota_zadanie19_kod.html';" />
+        <input type="button"class="item" value="zadanie 20 działanie" onClick="location.href='Maszota_zadanie20.html';" />
+        <input type="button"class="item" value="zadanie 20 kod" onClick="location.href='Maszota_zadanie20_kod.html';" />
+        <input type="button"class="item" value="zadanie 21a działanie "onClick="location.href='Maszota_zadanie21a.html';" />
+        <input type="button"class="item" value="zadanie 21a kod "onClick="location.href='Maszota_zadanie21a_kod.html';" />
+        <input type="button"class="item" value="zadanie 21 działanie "onClick="location.href='Maszota_zadanie21.html';" />
+        <input type="button"class="item" value="zadanie 21 kod "onClick="location.href='Maszota_zadanie21_kod.html';" />
+
+    </div>
+    <div class="napis2"><h1 class="nazwaa">Zadania&nbsp;Obiektowe</h1></div>
+    <div id="przyciski2">
+      <input type="button"class="item" value="zadanie 24"onClick="location.href='Maszota_zadanie24.html';" />
+      <input type="button"class="item" value="zadanie 25"onClick="location.href='Maszota_zadanie25.html';" />
+      <input type="button"class="item" value="zadanie 26"onClick="location.href='Maszota_zadanie26.html';" />
+      <input type="button"class="item" value="zadanie 27"onClick="location.href='Maszota_zadanie27.html';" />
+      <input type="button"class="item" value="zadanie 28"onClick="location.href='Maszota_zadanie28.html';" />
+      
+    </div>
+    <div class="napis3"><h1 class="nazwaa">Kody</h1></div>
+    <div id="przyciski3">
+      <input type="button"class="item" value="zadanie 26 - kod"onClick="location.href='Maszota_zadanie26_kod.html';" />
+      <input type="button"class="item" value="zadanie 27 - kod"onClick="location.href='Maszota_zadanie27_kod.html';" />
+      <input type="button"class="item" value="zadanie 28 - kod"onClick="location.href='Maszota_zadanie28_kod.html';" />
+    </div>
+</body>
+
+</html>

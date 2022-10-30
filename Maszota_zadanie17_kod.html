@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<textarea name="nazwa" cols="200" rows="70" disabled>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <div style="color:navy;font-size:50px;">
+            <script language="JavaScript">
+                var a = parseFloat(prompt("a=", ""));
+                var b = parseFloat(prompt("b=", ""));
+    
+                function suma_mas(a, b) {
+                    return a + b;
+                }
+    
+                function odejmowanie_mas(a, b) {
+                    return a - b;
+                }
+    
+                function mnozenie_mas(a, b) {
+                    return a * b;
+                }
+    
+                function do_kwadratu_mas(a, b) {
+                    document.write("a^2 = " + a * a + "<br>");
+                    document.write("b^2 = " + b * b + "<br>");
+                }
+    
+                function reszta_z_dzielenia_a_przez_b_mas(a, b) {
+                    return a % b;
+                }
+                document.write("suma = " + suma_mas(a, b) + "<br>");
+                document.write("odejmowanie = " + odejmowanie_mas(a, b) + "<br>");
+                document.write("mnozenie = " + mnozenie_mas(a, b) + "<br>");
+                do_kwadratu_mas(a, b);
+                document.write("reszta z dzielenia a przez b  = " + reszta_z_dzielenia_a_przez_b_mas(a, b) + "<br>");
+            </script>
+        </div>
+    </body>
+    
+    </html>
+
+</textarea>
+</body>
+
+</html>
